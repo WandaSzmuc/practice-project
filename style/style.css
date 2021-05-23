@@ -1,0 +1,123 @@
+:root{
+    --main-color: whitesmoke;
+    --secondary-color: rgba(77, 131, 77, 0.726);
+    --button-color:rgb(175, 141, 77);
+
+
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.container{
+max-width: 1024px;
+margin: 0 auto;
+}
+
+/* Style headera */
+
+header{
+    background-image: url(../images/city-438393_1920.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    color: var(--main-color);
+    z-index: auto;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+
+  .container{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+  }
+
+  
+  .nav{
+      padding: 25px  0 25px 0;
+      border-bottom: 0.1px solid rgba(255, 255, 240, 0.2);
+      position: relative;
+      z-index: 2;
+  }
+
+.nav_menu{
+    display:flex;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+.nav__menu__item{
+    padding-right: 30px;
+}
+
+.nav_logo{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.nav_logo::before{
+font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f4d8";
+  color:var(--main-color);
+}
+
+.welcome-screen{
+    height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome_box{
+    display: flex;
+    width: 50%;
+    height: 300px;
+
+}
+.introducing_video{
+    width: 50%;
+    height: 300px;
+}
+
+.welcome_box_items h1{
+    line-height: 40px;
+    font-weight: 900;
+}
+
+.welcome_box_items p{
+    line-height: 27px;
+    font-weight:400;
+}
+
+.header_button{
+    display: inline-block;
+    text-decoration: none;
+    color:var(--main-color);
+    border: 1px solid --button-color;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    margin-top: 20px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-weight:900;
+}
+
