@@ -1,8 +1,8 @@
 :root{
     --main-color: #fefae0;
-    --secondary-color: #ccd5ae;
+    --secondary-color: rgba(154, 161, 131, 0.2);
     --button-color:#d4a373;
-    --additional-color: #606c38;
+    --additional-color: rgba(94, 104, 630, 0.5);
     --matching-color: #faedcd;
 
 
@@ -44,7 +44,7 @@ header::before{
   }
 
 
-  .container{
+  .header_elements{
       display: flex;
       align-items: center;
       justify-content:space-between;
@@ -67,6 +67,14 @@ header::before{
 
 .nav__menu__item{
     padding-right: 30px;
+}
+
+.nav__menu__item::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f078";
+    color:var(--main-color);
+    margin-left: 8px;
 }
 
 .nav_logo{
@@ -120,7 +128,7 @@ font-family: "Font Awesome 5 Free";
     font-weight:400;
 }
 
-.header_button{
+.button_style{
     display: inline-block;
     text-decoration: none;
     color:var(--main-color);
@@ -133,3 +141,74 @@ font-family: "Font Awesome 5 Free";
     font-weight:900;
 }
 
+/* pricing section */
+
+.pricing_elements{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers{
+    display: flex;
+}
+
+.offer{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 50px 20px;
+    background-color: var(--secondary-color);
+    margin: 10px;
+}
+
+.offer h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.offer h1{
+    font-weight: 900;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.offer p{
+    text-align: center;
+}
+
+.best_offer{
+    width: 36%;
+    background-image: url(../images/work-731198_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    color:var(--matching-color);
+    z-index: auto;
+    position: relative;
+}
+
+.best_offer a{
+    margin-top: 70px;
+}
+.best_offer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .best_offer h2,
+  .best_offer h1,
+  .best_offer p,
+  .best_offer a{
+    z-index: 2;
+    position: relative;
+  }
