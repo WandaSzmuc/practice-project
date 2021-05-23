@@ -1,7 +1,7 @@
 :root{
-    --main-color: whitesmoke;
-    --secondary-color: rgba(77, 131, 77, 0.726);
-    --button-color:rgb(175, 141, 77);
+    --main-color: #fefae0;
+    --secondary-color: #ccd5ae;
+    --button-color:#d4a373;
 
 
 }
@@ -26,6 +26,7 @@ header{
     background-size:cover;
     background-position:center;
     height: 100vh;
+    width: 100vw;
     color: var(--main-color);
     z-index: auto;
 }
@@ -96,11 +97,20 @@ font-family: "Font Awesome 5 Free";
 .introducing_video{
     width: 50%;
     height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.introducing_video iframe{
+    height:270px;
+    width: 380px;
 }
 
 .welcome_box_items h1{
+    font-size: 30px;
     line-height: 40px;
     font-weight: 900;
+    margin-bottom: 30px;
 }
 
 .welcome_box_items p{
@@ -115,7 +125,7 @@ font-family: "Font Awesome 5 Free";
     border: 1px solid --button-color;
     border-radius: 5px;
     background-color: var(--button-color);
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 15px 25px;
     text-transform: uppercase;
     font-weight:900;
