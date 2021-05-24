@@ -35,6 +35,8 @@ header{
 header::before{
     content: '';
     position: absolute;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     bottom: 0;
     right: 0;
@@ -42,7 +44,6 @@ header::before{
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
-
 
   .header_elements{
       display: flex;
@@ -164,6 +165,7 @@ font-family: "Font Awesome 5 Free";
     padding: 50px 20px;
     background-color: var(--secondary-color);
     margin: 10px;
+    box-shadow: 0 0 1em rgb(172, 170, 170);
 }
 
 .offer h2{
@@ -189,6 +191,7 @@ font-family: "Font Awesome 5 Free";
     color:var(--matching-color);
     z-index: auto;
     position: relative;
+    
 }
 
 .best_offer a{
@@ -205,10 +208,32 @@ font-family: "Font Awesome 5 Free";
     z-index: 1;
   }
 
+  .best_offer::after{
+    content: 'Best choice';
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    background-color: rgb(46, 204, 46);
+    top:0;
+    border-radius: 5px;
+    padding: 10px 10px 0 10px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
   .best_offer h2,
   .best_offer h1,
   .best_offer p,
   .best_offer a{
     z-index: 2;
     position: relative;
+  }
+
+  .pricing_heading{
+      margin: 50px;
+      font-weight: 900;
+      font-size: 50px;
   }
