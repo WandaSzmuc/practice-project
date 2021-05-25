@@ -1,6 +1,7 @@
 :root{
     --main-color: #fefae0;
     --secondary-color: rgba(154, 161, 131, 0.2);
+    --secondary-color-darker: rgba(154, 161, 131, 0.7);
     --button-color:#d4a373;
     --additional-color: rgba(94, 104, 630, 0.5);
     --matching-color: #faedcd;
@@ -232,8 +233,83 @@ font-family: "Font Awesome 5 Free";
     position: relative;
   }
 
-  .pricing_heading{
+  .main_heading{
       margin: 50px;
       font-weight: 900;
       font-size: 50px;
+  }
+
+  /* blog */
+  .blog{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+  .all_elements{
+      display: flex;
+  }
+  
+
+.blog_elements{
+    display:flex;
+    flex-direction: column;
+    width: 65%;
+}
+.category{
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--button-color);
+    margin: 10px 0;
+}
+.articles_headlines{
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+.newest_article{
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-color-darker);
+}
+
+.newest_article_headline{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+  .newest_article_image{
+    max-width:624px ;
+    margin-bottom: 10px;
+  }
+
+  .article_description{
+    margin-bottom: 20px;
+  }
+
+  .older_articles{
+      display: flex;
+
+  }
+  
+  .older_article img{
+    max-width:150px;
+  }
+
+  .vlogs{
+    width: 35%;
+    padding-left:10px;
+  }
+
+  .vlog{
+      display: flex;
+      margin: 30px 0;
+  }
+
+  .vlog img{
+      width: 220px;
+      height: 120px;
   }
