@@ -319,7 +319,7 @@ font-family: "Font Awesome 5 Free";
     font-weight: 600;
     content: "\f04b";
     color: yellow;
-    border: 1px solid yellow;
+    border: 2px solid yellow;
     padding: 5px 10px;
     top: 1;
     left: 1;
@@ -341,4 +341,104 @@ font-family: "Font Awesome 5 Free";
   }
   .vlog_description{
       margin-left: 20px;
+  }
+
+
+  /* contact */
+
+  .contact_elements{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+  }
+
+  .contact_banner{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin-right: 50px;
+  }
+
+  .contact_data{
+      display: flex;
+  }
+  .contact_heading{
+    margin: 50px 0 30px 0;
+    font-weight: 900;
+    font-size: 50px;
+  }
+  
+  .contact_banner_element{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact_data{
+      margin-bottom: 70px;
+      color:cornflowerblue;
+  }
+
+  .contact_data_elements:first-child{
+      margin-right: 50px;
+  }
+
+  .contact_data p:first-child::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f0e0";
+    color: cornflowerblue;
+    padding-right: 10px;
+  }
+
+  .contact_data p:last-child::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f87b";
+    color: cornflowerblue;
+    padding-right: 10px;
+  }
+
+  form{
+      display:flex;
+      flex-direction: column;
+
+  }
+
+  .input_elements{
+      margin-bottom:30px;
+      border: none;
+      border-bottom: 1px solid var(--secondary-color-darker);
+      padding-bottom: 15px;
+      padding-right: 50px;
+  }
+
+  
+
+  ::placeholder{
+      color:cornflowerblue;
+      font-family: Raleway;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 13px;
+
+  }
+  .contact_us{
+      display:flex;
+      flex-direction: column;
+  }
+  .contact_button{
+      display: inline-block;
+      background-color: cornflowerblue;
+      color:white;
+      text-decoration: none;
+      border: 1px solid cornflowerblue;
+      border-radius: 20px;
+      padding: 10px 10px;
+      text-align: center;
+      box-shadow: 0 0 1em rgb(172, 170, 170);
+      font-weight: 600;;
   }
